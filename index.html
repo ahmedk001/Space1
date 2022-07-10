@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>スペース</title>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+  <body>
+    <header>
+        <a href="#" class="logo">スペース</a>
+        <ul> 
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="https://www.nasa.gov" target="_blank">Nasa</a></li>
+            <li><a href="https://instagram.com/_ahmedk1?igshid=YmMyMTA2M2Y=" target="_blank">Contact</a></li>
+
+
+
+
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Space Vibes</h2>
+        <a href="#sec" id="btn">Informations</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+     <h4>Random Informations</h4>
+    
+     <p>
+         <br>
+         The Moon is Earth's only natural satellite<br>
+         and the fifth largest moon in the solar system.<br>
+         The Moon's presence helps stabilize our planet's wobble<br>
+         and moderate our climate.<br>
+         The Moon's distance from Earth is about 240,000 miles (385,000km).<br>
+         The Moon has a very thin atmosphere called an exosphere <br>
+         And<br>
+         Stars are huge celestial bodies made mostly of hydrogen<br>
+         and helium that produce light and heat from<br>
+         the churning nuclear forges inside their cores.<br>
+         Aside from our sun, the dots of light<br>
+         we see in the sky are all light-years from Earth.<br>
+         Joji is a japanese boi.<br>
+         Pink Floyd are the best.<br>
+         <br>
+         <br>
+         <br>
+         E=mc^2
+         
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        '-081021083083,<br>
+        071052'002- -075092002052- -002052001054052021012 081 '-028052003083'<br>
+        001032012-054032-081021 -029034052 -'075002'- -'-013002002-'-,<br>
+        071012076- 054021001083083097 -081028001052 -032021088052 ,<br>
+        -075092002052- -002034003021- -027092032 -001032012 -002034003021 '002038001013021002'<br>
+        001032097081001097.
+        <br>
+        <br>
+        Notice*<br>If u don't understand these numbers then, <br>
+        u dont have the access to read it.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Copyright &copy; 2022 All Rights Reverse To <br> Ahmed Khaled &reg; Team
+    </p>
+
+    </div>
+  
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+        
+      window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+  </body>
+</html>
